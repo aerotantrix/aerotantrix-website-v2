@@ -5,13 +5,23 @@
         class="tag-image navbar-button-alternate"
         src="assets/images/aerotantrix_white_tag.png"
     /></a>
-    <a class="navbar-button navbar-button-alternate" href="/">Gallery</a>
-    <a class="navbar-button navbar-button-alternate" href="/sponsors"
+    <a class="navbar-button navbar-button-alternate" [routerLink]="['/']"
+      >Gallery</a
+    >
+    <a
+      class="navbar-button navbar-button-alternate"
+      [routerLink]="['/sponsors']"
       >Sponsors</a
     >
-    <a class="navbar-button navbar-button-alternate" href="/team">Team</a>
+    <a class="navbar-button navbar-button-alternate" [routerLink]="['/team']"
+      >Team</a
+    >
 
-    <a class="navbar-button navbar-button-alternate" href="/">Alumni</a>
-    <a class="navbar-button navbar-button-alternate" href="/">Contact</a>
+    <a class="navbar-button navbar-button-alternate" [routerLink]="['/alumni']"
+      >Alumni</a
+    >
+    <a class="navbar-button navbar-button-alternate" [routerLink]="['/contact']"
+      >Contact</a
+    >
   </mat-toolbar-row>
 </mat-toolbar>

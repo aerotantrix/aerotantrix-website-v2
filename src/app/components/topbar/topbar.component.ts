@@ -16,4 +16,8 @@ export class TopbarComponent implements OnInit {
       console.log(this.isAtTop);
     });
   }
+
+  scroll(el: HTMLElement): void {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
 }
