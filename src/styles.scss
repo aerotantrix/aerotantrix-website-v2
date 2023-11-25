@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&family=Raleway");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+app-topbar {
+  width: 100vw;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+}
+
+app-home {
+  height: 100vh;
+  width: 100vw;
+}
+
+app-contact {
+  height: 100px;
+  width: 100vw;
+}

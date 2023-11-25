@@ -1,0 +1,24 @@
+<div class="sponsors-container">
+  <div class="heading">Our Valuable Sponsors</div>
+  <div class="main-text">
+    We extend our deepest gratitude to the generous sponsors who have played a
+    crucial role in supporting Aerotantrix. Their commitment to our club has
+    made a significant impact, enabling us to thrive and excel in various
+    competitions. Their belief in our mission has not only enhanced our
+    capabilities but has also fostered a sense of camaraderie within our club.
+    Together, we are making a positive impact, and we look forward to continued
+    success in the future.
+  </div>
+  <div class="sponsors">
+    <div class="sponsor" *ngFor="let sponsor of sponsors">
+      <img
+        class="logo"
+        [src]="sponsor.image"
+        [alt]="sponsor.name"
+        (click)="openLink(sponsor.url)"
+      />
+      <div class="name">{{ sponsor.name }}</div>
+      <div class="tag">{{ sponsor.tag }}</div>
+    </div>
+  </div>
+</div>

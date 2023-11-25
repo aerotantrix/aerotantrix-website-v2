@@ -1,0 +1,10 @@
+<div class="team-container">
+  <div class="heading">Team Aerotantrix</div>
+  <div class="team-members">
+    <div class="team-member" *ngFor="let member of teamMembers">
+      <img class="member-image" [src]="member.image" [alt]="member.name" />
+      <div class="name">{{ member.name }}</div>
+      <div class="designation">{{ member.designation }}</div>
+    </div>
+  </div>
+</div>

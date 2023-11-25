@@ -1,0 +1,15 @@
+.contact-container {
+  padding: 3rem 0rem;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212529;
+  .heading {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+  }
+}

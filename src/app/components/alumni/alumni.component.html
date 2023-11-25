@@ -1,0 +1,19 @@
+<div class="alumni-container">
+  <div class="heading">Standing on the Shoulders of Giants...</div>
+  <div class="main-text">
+    To our cherished alumni, the architects of our success: your unwavering
+    support has been the cornerstone of our journey. Your contributions, both in
+    time and wisdom, have propelled us to new heights. As we continue to grow
+    and thrive, we fondly remember the indelible mark you left on our club.
+    Thank you for being the guiding stars that have illuminated our path. Your
+    impact is felt in every achievement, and your spirit resonates in every
+    success.
+  </div>
+  <div class="alumni">
+    <div class="alumnus" *ngFor="let alumnus of alumni">
+      <img class="image" [src]="alumnus.image" [alt]="alumnus.name" />
+      <div class="name">{{ alumnus.name }}</div>
+      <div class="currently-at">{{ alumnus.currentlyAt }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+.sponsors-container {
+  padding: 3rem 0rem;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9ecef;
+  .heading {
+    color: #212529;
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding-bottom: 2rem;
+  }
+  .main-text {
+    color: #212529;
+    width: 80%;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: justify;
+  }
+  .sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .sponsor {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 2rem;
+      align-items: center;
+      width: 20rem;
+    }
+    .logo {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 1rem;
+      object-fit: cover;
+      transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+      border: 1px solid #212529;
+      &:hover {
+        cursor: pointer;
+        width: 21rem;
+        height: 21rem;
+      }
+    }
+    .name {
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+      color: #212529;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    .tag {
+      margin-top: 0.5rem;
+      display: flex;
+      color: #212529;
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}

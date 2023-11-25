@@ -1,0 +1,27 @@
+.home-outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: linear-gradient(black, 25%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 8rem;
+  font-weight: 900;
+}
