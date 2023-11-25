@@ -1,15 +1,63 @@
 .contact-container {
-  padding: 3rem 0rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #212529;
+  color: white;
   .heading {
     color: white;
     font-size: 3.5rem;
     font-weight: 900;
     padding-bottom: 2rem;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .contact {
+      height: auto;
+      width: 40rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 1rem 2rem;
+      align-items: center;
+      border: 0.25rem solid white;
+      padding: 1rem;
+      border-radius: 1rem;
+      transition: transform 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      .image {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 1rem;
+        object-fit: cover;
+        background-color: white;
+      }
+      .information {
+        padding: 1rem;
+        .name {
+          margin-top: 0.5rem;
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        .tag1 {
+          font-size: 1.2rem;
+          font-weight: 400;
+          font-style: italic;
+        }
+        .tag2 {
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+      }
+    }
   }
 }
