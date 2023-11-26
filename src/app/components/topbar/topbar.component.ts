@@ -31,28 +31,68 @@ export class TopbarComponent implements OnInit {
         inline: 'nearest',
       });
     } else if (to === 'gallery') {
-      document.getElementById('gallery-container')?.scrollIntoView({
+      // document.getElementById('gallery-container')?.scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'start',
+      //   inline: 'nearest',
+      // });
+      const targetScrollTop =
+        (document.getElementById('gallery-container')?.getBoundingClientRect()
+          .top ?? 0) +
+        window.scrollY -
+        64;
+
+      window.scrollTo({
+        top: targetScrollTop,
         behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
       });
     } else if (to === 'sponsors') {
-      document.getElementById('sponsors-container')?.scrollIntoView({
+      // document.getElementById('sponsors-container')?.scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'start',
+      //   inline: 'nearest',
+      // });
+      const targetScrollTop =
+        (document.getElementById('sponsors-container')?.getBoundingClientRect()
+          .top ?? 0) +
+        window.scrollY -
+        64;
+
+      window.scrollTo({
+        top: targetScrollTop,
         behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
       });
     } else if (to === 'team') {
-      document.getElementById('team-container')?.scrollIntoView({
+      // document.getElementById('team-container')?.scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'start',
+      //   inline: 'nearest',
+      // });
+      const targetScrollTop =
+        (document.getElementById('team-container')?.getBoundingClientRect()
+          .top ?? 0) +
+        window.scrollY -
+        64;
+
+      window.scrollTo({
+        top: targetScrollTop,
         behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
       });
     } else if (to === 'alumni') {
-      document.getElementById('alumni-container')?.scrollIntoView({
+      // document.getElementById('alumni-container')?.scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'start',
+      //   inline: 'nearest',
+      // });
+      const targetScrollTop =
+        (document.getElementById('alumni-container')?.getBoundingClientRect()
+          .top ?? 0) +
+        window.scrollY -
+        64;
+
+      window.scrollTo({
+        top: targetScrollTop,
         behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
       });
     } else if (to === 'contact') {
       document.getElementById('contact-container')?.scrollIntoView({
