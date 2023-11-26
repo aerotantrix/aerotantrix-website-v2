@@ -1,13 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&family=Raleway");
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
+
+* {
+  font-family: "Raleway", sans-serif;
+}
 
 html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -26,7 +32,11 @@ app-home {
   width: 100vw;
 }
 
-app-contact {
-  height: 100px;
+app-sponsors {
   width: 100vw;
 }
+
+// app-contact {
+//   height: 100px;
+//   width: 100vw;
+// }

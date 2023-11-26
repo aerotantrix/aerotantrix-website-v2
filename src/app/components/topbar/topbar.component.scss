@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 1300px) {
   .mat-toolbar-row {
     padding: 0 20vw;
     flex-direction: row;
@@ -6,14 +6,40 @@
   }
 }
 
+@media (min-width: 1000px) {
+  .mat-toolbar-row {
+    padding: 0 10vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mat-toolbar-row {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.dark {
+  background-color: #212121;
+}
+
 .tag-image {
   height: 2rem;
   width: auto;
 }
 
-.mat-toolbar {
-  background: transparent;
-  margin: 2rem 0rem;
+.toolbar-buttons {
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .navbar-button {
@@ -24,5 +50,6 @@
   transition: color 0.2s ease-in-out;
   &:hover {
     color: gray;
+    cursor: pointer;
   }
 }

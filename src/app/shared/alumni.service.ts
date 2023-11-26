@@ -9,7 +9,7 @@ export class AlumniService {
 
   getAlumni(): Alumni[] {
     return [
-      new Alumni('assets/images/alumni/sharath.png', 'Srinag Sir', 'Honeywell'),
+      new Alumni('assets/images/alumni/sharath.png', 'Dr. Srinag', 'Honeywell'),
       new Alumni(
         'assets/images/alumni/sharath.png',
         'Kushal Shekhar',
@@ -17,13 +17,13 @@ export class AlumniService {
       ),
       new Alumni(
         'assets/images/alumni/sharath.png',
-        'Vamsi Krishna',
-        'New York University'
+        'Jeevan M N',
+        'Mercedes-Benz'
       ),
       new Alumni(
         'assets/images/alumni/sharath.png',
-        'Jeevan M N',
-        'Mercedes-Benz'
+        'Vamsi Krishna',
+        'New York University'
       ),
     ];
   }

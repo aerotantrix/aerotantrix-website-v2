@@ -1,0 +1,65 @@
+.carousel {
+  position: relative;
+  height: 100%;
+  .slide {
+    height: 80vh;
+    width: 80vw;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-color: #e9ecef;
+    transition: background-image 0.3s ease-in-out;
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 32px;
+      font-size: 45px;
+      background-color: transparent;
+      color: #212121;
+      z-index: 1;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: #9c9c9c;
+      }
+    }
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 32px;
+      font-size: 45px;
+      background-color: transparent;
+      color: #212121;
+      z-index: 1;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: #9c9c9c;
+      }
+    }
+    .subtext {
+      padding: 0.5rem;
+      position: absolute;
+      bottom: 0;
+      border-radius: 1rem;
+      width: 100%;
+      font-size: 1.2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+  }
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  .dot {
+    margin: 15px 3px;
+    cursor: pointer;
+    height: 8vh;
+    width: 8vw;
+    background-size: cover;
+    background-position: center;
+  }
+}

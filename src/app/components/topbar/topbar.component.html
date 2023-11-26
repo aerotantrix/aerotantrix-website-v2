@@ -1,26 +1,33 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" [ngClass]="isAtTop ? 'transparent' : 'dark'">
   <mat-toolbar-row class="toolbar-buttons">
-    <a href="/"
+    <a
       ><img
         class="tag-image navbar-button-alternate"
         src="assets/images/aerotantrix_white_tag.png"
+        (click)="scrollTo('home')"
     /></a>
-    <a class="navbar-button navbar-button-alternate" [routerLink]="['/']"
+    <a
+      class="navbar-button navbar-button-alternate"
+      (click)="scrollTo('gallery')"
       >Gallery</a
     >
     <a
       class="navbar-button navbar-button-alternate"
-      [routerLink]="['/sponsors']"
+      (click)="scrollTo('sponsors')"
       >Sponsors</a
     >
-    <a class="navbar-button navbar-button-alternate" [routerLink]="['/team']"
+    <a class="navbar-button navbar-button-alternate" (click)="scrollTo('team')"
       >Team</a
     >
 
-    <a class="navbar-button navbar-button-alternate" [routerLink]="['/alumni']"
+    <a
+      class="navbar-button navbar-button-alternate"
+      (click)="scrollTo('alumni')"
       >Alumni</a
     >
-    <a class="navbar-button navbar-button-alternate" [routerLink]="['/contact']"
+    <a
+      class="navbar-button navbar-button-alternate"
+      (click)="scrollTo('contact')"
       >Contact</a
     >
   </mat-toolbar-row>
