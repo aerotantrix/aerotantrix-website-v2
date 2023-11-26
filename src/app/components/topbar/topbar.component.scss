@@ -23,14 +23,16 @@
 
 .transparent {
   background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .dark {
   background-color: #212121;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .tag-image {
-  height: 2rem;
+  height: 1.75rem;
   width: auto;
 }
 
@@ -44,7 +46,8 @@
 
 .navbar-button {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   display: inline-block;
   transition: color 0.2s ease-in-out;
@@ -52,4 +55,10 @@
     color: gray;
     cursor: pointer;
   }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

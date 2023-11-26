@@ -36,7 +36,47 @@ app-sponsors {
   width: 100vw;
 }
 
-// app-contact {
-//   height: 100px;
-//   width: 100vw;
-// }
+.fade-in-left {
+  animation: fade-in-left 1s ease-in;
+}
+
+.fade-in-right {
+  animation: fade-in-right 1s ease-in;
+}
+
+.fade-in-top {
+  animation: fade-in-top 1s ease-in;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
