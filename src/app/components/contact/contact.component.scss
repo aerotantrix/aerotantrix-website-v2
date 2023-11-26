@@ -1,63 +1,125 @@
-.contact-container {
-  padding-top: 3rem;
-  padding-bottom: 6rem;
-  height: auto;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #212529;
-  color: white;
-  .heading {
-    color: white;
-    font-size: 3.5rem;
-    font-weight: 900;
-    padding-bottom: 2rem;
-  }
-  .contacts {
+@media (min-width: 700px) {
+  .contact-container {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    height: auto;
+    width: 100vw;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .contact {
-      height: auto;
-      width: 40rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212529;
+    color: white;
+    .contacts {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
-      margin: 1rem 2rem;
-      align-items: center;
-      border: 0.25rem solid white;
-      padding: 1rem;
-      border-radius: 1rem;
-      transition: transform 0.2s ease-in-out;
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-      }
-      .image {
-        height: 10rem;
-        width: 10rem;
-        border-radius: 1rem;
-        object-fit: cover;
-        background-color: white;
-      }
-      .information {
-        padding: 1rem;
-        .name {
-          margin-top: 0.5rem;
-          font-size: 1.4rem;
-          font-weight: 600;
-          margin-bottom: 0.5rem;
+      justify-content: center;
+      .contact {
+        height: auto;
+        width: 40rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem 2rem;
+        align-items: center;
+        border: 0.25rem solid white;
+        border-radius: 1.5rem;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
         }
-        .tag1 {
-          font-size: 1.2rem;
-          font-weight: 400;
-          font-style: italic;
-          margin-bottom: 0.5rem;
+        .image {
+          height: 12rem;
+          width: 12rem;
+          border-radius: 1rem;
+          object-fit: cover;
+          background-color: white;
         }
-        .tag2 {
-          font-size: 1.2rem;
-          font-weight: 400;
+        .information {
+          padding: 1rem;
+          .name {
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+          .tag1 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+          }
+          .tag2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212529;
+    color: white;
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .contact {
+        height: auto;
+        width: 16rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1rem 2rem;
+        align-items: center;
+        border: 0.25rem solid white;
+
+        border-radius: 1.5rem;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+        .image {
+          height: 15rem;
+          width: 15.5rem;
+          border-radius: 1rem;
+          object-fit: cover;
+          background-color: white;
+        }
+        .information {
+          padding: 1rem;
+          .name {
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-align: center;
+          }
+          .tag1 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            text-align: center;
+          }
+          .tag2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-wrap: wrap;
+            text-align: center;
+          }
         }
       }
     }

@@ -1,1 +1,24 @@
-<p>sidebar works!</p>
+<mat-sidenav-container
+  [ngClass]="isAtTop ? 'transparent fade-in-top' : 'dark fade-in-top'"
+>
+  <mat-sidenav class="sidenav" #sideNav>
+    <div class="column-container">
+      <a class="side-navbar-button">Gallery</a>
+      <a class="side-navbar-button">Sponsors</a>
+      <a class="side-navbar-button">Team</a>
+      <a class="side-navbar-button">Alumni</a>
+      <a class="side-navbar-button">Contact</a>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <a
+      ><img
+        class="tag-image navbar-button-alternate"
+        src="assets/images/aerotantrix_white_tag.png"
+        (click)="scrollTo('home')"
+    /></a>
+    <button mat-icon-button (click)="sideNav.toggle()">
+      <mat-icon class="menu-button">menu</mat-icon>
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

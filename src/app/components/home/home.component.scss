@@ -11,6 +11,51 @@
   object-fit: cover;
 }
 
+@media (max-width: 700px) {
+  .background-image {
+    height: 100vh;
+    width: 100vw;
+    content: url("/assets/images/base_background_crop.png");
+  }
+  .text-container {
+    p {
+      font-size: 2rem;
+      font-weight: 900;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .background-image {
+    height: 100vh;
+    width: 100vw;
+    content: url("/assets/images/base_background.png");
+  }
+  .text-container {
+    p {
+      font-size: 4rem;
+      font-weight: 900;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .background-image {
+    height: 100vh;
+    width: 100vw;
+    content: url("/assets/images/base_background.png");
+  }
+  .text-container {
+    p {
+      font-size: 8rem;
+      font-weight: 900;
+      color: white;
+    }
+  }
+}
+
 .overlay {
   height: 100vh;
   width: 100vw;
@@ -21,11 +66,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .text-container {
-    label {
-      font-size: 8rem;
-      font-weight: 900;
-      color: white;
-    }
-  }
 }

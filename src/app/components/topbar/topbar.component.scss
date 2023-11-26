@@ -1,3 +1,9 @@
+@media (max-width: 700px) {
+  .mat-toolbar {
+    display: none;
+  }
+}
+
 @media (min-width: 1300px) {
   .mat-toolbar-row {
     padding: 0 20vw;
@@ -31,34 +37,32 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.tag-image {
-  height: 1.75rem;
-  width: auto;
-}
-
 .toolbar-buttons {
   img {
     &:hover {
       cursor: pointer;
     }
   }
-}
-
-.navbar-button {
-  color: white;
-  font-weight: 500;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  display: inline-block;
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: gray;
-    cursor: pointer;
+  .navbar-button {
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: gray;
+      cursor: pointer;
+    }
   }
-}
 
-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tag-image {
+      height: 1.75rem;
+      width: auto;
+    }
+  }
 }

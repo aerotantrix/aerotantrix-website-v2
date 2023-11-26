@@ -27,6 +27,14 @@ app-topbar {
   top: 0;
 }
 
+app-sidebar {
+  width: 100vw;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+}
+
 app-home {
   height: 100vh;
   width: 100vw;
@@ -34,6 +42,21 @@ app-home {
 
 app-sponsors {
   width: 100vw;
+}
+
+@media (min-width: 1150px) {
+  .heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (max-width: 1150px) {
+  .heading {
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .fade-in-left {

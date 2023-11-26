@@ -10,12 +10,12 @@ export class TeamMembersService {
   getTeamMembers(): TeamMember[] {
     return [
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/Hemant.png',
         'Hemant Sahu',
         'Captain'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/Stuthi.png',
         'Stuthi Jaisimha',
         'Team Manager'
       ),
@@ -30,53 +30,53 @@ export class TeamMembersService {
         'Fabrication Lead'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/Keerthan.png',
         'Keerthan P',
         'Operations & Marketing Lead'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/shreyas.png',
         'Shreyas Aradhya',
         'Electronics Lead'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/ATUL.png',
         'Atul Kumar',
         'Core Member'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/channnakeshava.png',
         'Channakeshava',
         'Core Member'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/Shravya.png',
         'Shravya Aravind',
         'Core Member'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/vivek.png',
         'Vivek Rao',
         'Core Member'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/ABHISHEK.png',
         'Abhishek M.B.',
         'Core Member'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/DARSHAN.png',
         'Darshan Y.',
         'Core Member'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
-        'Nidhi Patil',
+        'assets/images/team-members/Nidhi.png',
+        'Nidhi Prashant Patil',
         'Core Member'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
-        'Vivek Rao',
+        'assets/images/team-members/SAATWIK.png',
+        'Saatwik',
         'Core Member'
       ),
     ];

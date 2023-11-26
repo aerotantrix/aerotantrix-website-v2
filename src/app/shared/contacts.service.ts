@@ -18,7 +18,7 @@ export class ContactsService {
       ),
       new Contact(
         'Large',
-        'assets/images/contacts/srikanth.png',
+        'assets/images/contacts/Hemant.png',
         'Hemant Sahu',
         'Captain',
         '+91 70009 47530'
@@ -35,7 +35,7 @@ export class ContactsService {
         'assets/images/contacts/instagram.png',
         'Instagram',
         '',
-        'https://www.instagram.com/aerotantrix/'
+        ''
       ),
     ];
   }
