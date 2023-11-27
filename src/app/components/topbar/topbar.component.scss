@@ -120,3 +120,8 @@ a {
     justify-content: space-evenly;
   }
 }
+
+.mat-toolbar,
+.mobile-topbar {
+  overflow-x: hidden;
+}

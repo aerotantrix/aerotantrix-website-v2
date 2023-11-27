@@ -2,8 +2,8 @@
   <div class="carousel">
     <div class="slide" [ngStyle]="{ 'background-image': getCurrentSlideUrl() }">
       <div>
-        <div class="left-arrow" (click)="goToNext()">◀</div>
-        <div class="right-arrow" (click)="goToPrevious()">▶</div>
+        <div class="left-arrow" (click)="goToPrevious()">◀</div>
+        <div class="right-arrow" (click)="goToNext()">▶</div>
       </div>
       <div class="subtext">{{ getCurrentSlideText() }}</div>
     </div>

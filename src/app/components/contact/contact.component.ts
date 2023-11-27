@@ -19,6 +19,10 @@ export class ContactComponent {
       window.open(`mailto:${contact.tag2}`, '_blank');
     } else if (modifier === 'Instagram') {
       window.open(contact.tag2, '_blank');
+    } else if (modifier === 'Ketto') {
+      window.open('https://ketto.org/s?id=rm-867662-7545794', '_blank');
+    } else if (modifier === 'GitHub') {
+      window.open('https://github.com/aerotantrix', '_blank');
     }
   }
 }

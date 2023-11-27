@@ -37,6 +37,20 @@ export class ContactsService {
         '',
         ''
       ),
+      // new Contact(
+      //   'Large',
+      //   'assets/images/contacts/github.png',
+      //   'GitHub',
+      //   '',
+      //   'aerotantrix'
+      // ),
+      new Contact(
+        'Large',
+        'assets/images/contacts/ketto.png',
+        'Ketto',
+        '',
+        'Support Us'
+      ),
     ];
   }
 }

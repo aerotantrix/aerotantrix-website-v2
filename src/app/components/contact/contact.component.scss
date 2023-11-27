@@ -9,75 +9,55 @@
     align-items: center;
     background-color: #212529;
     color: white;
-    .col-4 {
+    .content {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      .gmap {
-        border: 0.25rem solid white;
-        border-radius: 1.5rem;
-        height: 27rem;
-        width: 27rem;
-        transition: transform 0.2s ease-in-out;
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.05);
-        }
-        iframe {
-          height: 22rem;
-          width: 26.5rem;
-          border-radius: 1rem;
-        }
-        .address {
-          font-size: 1.2rem;
-          padding: 1rem;
-        }
-        margin-bottom: 1rem;
-      }
-    }
-    .contacts {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      .contact {
-        height: auto;
-        width: 30rem;
+      .contacts {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        margin: 1rem 2rem;
-        align-items: center;
-        border: 0.25rem solid white;
-        border-radius: 1.5rem;
-        transition: transform 0.2s ease-in-out;
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.05);
-        }
-        .image {
-          height: 12rem;
-          width: 12rem;
-          border-radius: 1rem;
-          object-fit: cover;
-          background-color: white;
-        }
-        .information {
-          padding: 1rem;
-          .name {
-            margin-top: 0.5rem;
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+        justify-content: right;
+        .contact {
+          height: auto;
+          width: 30rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin: 1rem 2rem;
+          align-items: center;
+          border: 0.25rem solid white;
+          border-radius: 1.5rem;
+          transition: transform 0.2s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
           }
-          .tag1 {
-            font-size: 1.2rem;
-            font-weight: 400;
-            font-style: italic;
-            margin-bottom: 0.5rem;
+          .address {
+            padding: 1rem;
           }
-          .tag2 {
-            font-size: 1.2rem;
-            font-weight: 400;
+          .image {
+            height: 12rem;
+            width: 12rem;
+            border-radius: 1rem;
+            object-fit: cover;
+            background-color: white;
+          }
+          .information {
+            padding: 1rem;
+            .name {
+              margin-top: 0.5rem;
+              font-size: 1.4rem;
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+            }
+            .tag1 {
+              font-size: 1.2rem;
+              font-weight: 400;
+              font-style: italic;
+              margin-bottom: 0.5rem;
+            }
+            .tag2 {
+              font-size: 1.2rem;
+              font-weight: 400;
+            }
           }
         }
       }
@@ -96,85 +76,58 @@
     align-items: center;
     background-color: #212529;
     color: white;
-    .row {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .col-4 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .gmap {
-        border: 0.25rem solid white;
-        border-radius: 1.5rem;
-        height: auto;
-        width: 16rem;
-        transition: transform 0.2s ease-in-out;
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.05);
-        }
-        iframe {
-          height: 15rem;
-          width: 15.5rem;
-          border-radius: 1rem;
-        }
-        .address {
-          font-size: 1rem;
-          padding: 1rem;
-        }
-        margin-bottom: 1rem;
-      }
-    }
-    .contacts {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      .contact {
-        height: auto;
-        width: 16rem;
+    .content {
+      .contacts {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        margin: 1rem 2rem;
-        align-items: center;
-        border: 0.25rem solid white;
-        border-radius: 1.5rem;
-        transition: transform 0.2s ease-in-out;
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.05);
-        }
-        .image {
-          height: 15rem;
-          width: 15.5rem;
-          border-radius: 1rem;
-          object-fit: cover;
-          background-color: white;
-        }
-        .information {
-          padding: 1rem;
-          .name {
-            margin-top: 0.5rem;
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            text-align: center;
+        justify-content: center;
+        .contact {
+          height: auto;
+          width: 16rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin: 1rem 2rem;
+          align-items: center;
+          border: 0.25rem solid white;
+          border-radius: 1.5rem;
+          transition: transform 0.2s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
           }
-          .tag1 {
-            font-size: 1.2rem;
-            font-weight: 400;
-            font-style: italic;
-            margin-bottom: 0.5rem;
-            text-align: center;
+          .address {
+            padding: 1rem;
           }
-          .tag2 {
-            font-size: 1.2rem;
-            font-weight: 400;
-            text-wrap: wrap;
-            text-align: center;
+          .image {
+            height: 15rem;
+            width: 15.5rem;
+            border-radius: 1rem;
+            object-fit: cover;
+            background-color: white;
+          }
+          .information {
+            padding: 1rem;
+            .name {
+              margin-top: 0.5rem;
+              font-size: 1.4rem;
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+              text-align: center;
+            }
+            .tag1 {
+              font-size: 1.2rem;
+              font-weight: 400;
+              font-style: italic;
+              margin-bottom: 0.5rem;
+              text-align: center;
+            }
+            .tag2 {
+              font-size: 1.2rem;
+              font-weight: 400;
+              text-wrap: wrap;
+              text-align: center;
+            }
           }
         }
       }
