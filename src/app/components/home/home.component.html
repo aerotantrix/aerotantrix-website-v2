@@ -1,5 +1,14 @@
 <div class="home-outer-container" id="home-outer-container">
-  <img class="background-image" />
+  <img
+    class="background-image"
+    src="assets/images/base-background-crop.png"
+    *ngIf="crop"
+  />
+  <img
+    class="background-image"
+    src="assets/images/base-background.png"
+    *ngIf="!crop"
+  />
   <div class="overlay">
     <div class="text-container fade-in-top">
       <p>In Thrust We Trust.</p>
