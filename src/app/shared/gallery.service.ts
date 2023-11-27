@@ -19,7 +19,19 @@ export class GalleryService {
       },
       {
         url: 'assets/images/gallery/cadmodel.png',
-        text: 'CAD Model of the plane',
+        text: 'CAD Model of our plane, 2022',
+      },
+      {
+        url: 'assets/images/gallery/plane23.png',
+        text: 'CAD Model of our plane, 2023',
+      },
+      {
+        url: 'assets/images/gallery/cansatcad.png',
+        text: 'CAD Model of CANSAT 2023',
+      },
+      {
+        url: 'assets/images/gallery/cansat.png',
+        text: 'CANSAT 2023, ready for liftoff',
       },
       {
         url: 'assets/images/gallery/skeletal.png',
@@ -28,6 +40,10 @@ export class GalleryService {
       {
         url: 'assets/images/gallery/finalplane.png',
         text: 'Ready to Fly',
+      },
+      {
+        url: 'assets/images/gallery/hexacopter.png',
+        text: 'Hexacopter 2023',
       },
     ];
   }
