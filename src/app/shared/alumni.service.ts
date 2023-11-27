@@ -16,7 +16,7 @@ export class AlumniService {
       ),
       new Alumni(
         'assets/images/alumni/kushal.png',
-        'Kushal Shekhar',
+        'Kushal Shekhar Pradhan',
         'Deloitte'
       ),
       new Alumni(
@@ -33,6 +33,21 @@ export class AlumniService {
         'assets/images/alumni/laxminarayan.png',
         'Shenoy Laxminarayan',
         'Technische Universität Dresden'
+      ),
+      new Alumni(
+        'assets/images/alumni/maithily.png',
+        'Maithily Ramesh Puranik',
+        'Deloitte'
+      ),
+      new Alumni(
+        'assets/images/alumni/sohan.png',
+        'Sohan Purushan',
+        'Larsen & Toubro'
+      ),
+      new Alumni(
+        'assets/images/alumni/tejas.png',
+        'Tejas Basavaraj',
+        'VÆRIDION'
       ),
     ];
   }
