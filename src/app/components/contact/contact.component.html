@@ -1,16 +1,35 @@
 <div class="contact-container" id="contact-container">
   <div class="heading">Reach out to us</div>
-  <div class="contacts">
-    <div
-      class="contact"
-      *ngFor="let contact of contacts"
-      (click)="contactClick(contact, contact.name)"
-    >
-      <img class="image" [src]="contact.image" [alt]="contact.name" />
-      <div class="information">
-        <div class="name">{{ contact.name }}</div>
-        <div class="tag1" *ngIf="contact.tag1 !== ''">{{ contact.tag1 }}</div>
-        <div class="tag2">{{ contact.tag2 }}</div>
+  <div class="row">
+    <div class="col-4">
+      <div class="gmap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4274.105040373991!2d76.63857177545984!3d12.284028787971696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf65561e102919%3A0xf947b18cc5ad3d88!2sThe%20National%20Institute%20of%20Engineering%20South%20Campus%20(NIE%20South%20)!5e1!3m2!1sen!2sin!4v1701070346659!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <label class="address"
+          >Mananthavadi Rd, Vidyaranyapura, Mysuru, Karnataka 570008</label
+        >
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="contacts">
+        <div
+          class="contact"
+          *ngFor="let contact of contacts"
+          (click)="contactClick(contact, contact.name)"
+        >
+          <img class="image" [src]="contact.image" [alt]="contact.name" />
+          <div class="information">
+            <div class="name">{{ contact.name }}</div>
+            <div class="tag1" *ngIf="contact.tag1 !== ''">
+              {{ contact.tag1 }}
+            </div>
+            <div class="tag2">{{ contact.tag2 }}</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

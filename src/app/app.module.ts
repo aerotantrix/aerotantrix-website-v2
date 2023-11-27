@@ -15,8 +15,8 @@ import { TeamComponent } from './components/team/team.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { AlumniComponent } from './components/alumni/alumni.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
-import { CarouselComponent } from './shared/carousel/carousel.component';
 import { CarouselModule } from './shared/carousel/carousel.module';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -38,6 +38,7 @@ import { CarouselModule } from './shared/carousel/carousel.module';
     MatSidenavModule,
     CarouselModule,
     MatIconModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

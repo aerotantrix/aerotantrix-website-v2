@@ -92,10 +92,20 @@ export class SidebarComponent {
         behavior: 'smooth',
       });
     } else if (to === 'contact') {
-      document.getElementById('contact-container')?.scrollIntoView({
+      // document.getElementById('contact-container')?.scrollIntoView({
+      //   behavior: 'smooth',
+      //   block: 'start',
+      //   inline: 'nearest',
+      // });
+      const targetScrollTop =
+        (document.getElementById('contact-container')?.getBoundingClientRect()
+          .top ?? 0) +
+        window.scrollY -
+        64;
+
+      window.scrollTo({
+        top: targetScrollTop,
         behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest',
       });
     }
   }

@@ -2,36 +2,82 @@
   color="primary"
   [ngClass]="isAtTop ? 'transparent fade-in-top' : 'dark fade-in-top'"
 >
-  <mat-toolbar-row class="toolbar-buttons">
-    <a
-      ><img
-        class="tag-image navbar-button-alternate"
-        src="assets/images/aerotantrix_white_tag.png"
-        (click)="scrollTo('home')"
-    /></a>
-    <a
-      class="navbar-button navbar-button-alternate"
-      (click)="scrollTo('gallery')"
-      >Gallery</a
-    >
-    <a
-      class="navbar-button navbar-button-alternate"
-      (click)="scrollTo('sponsors')"
-      >Sponsors</a
-    >
-    <a class="navbar-button navbar-button-alternate" (click)="scrollTo('team')"
-      >Team</a
-    >
+  <a
+    ><img
+      class="tag-image navbar-button-alternate"
+      src="assets/images/aerotantrix_white_tag.png"
+      (click)="scrollTo('home')"
+  /></a>
+  <a
+    class="hover-underline-animation navbar-button navbar-button-alternate"
+    (click)="scrollTo('gallery')"
+    >Gallery</a
+  >
+  <a
+    class="hover-underline-animation navbar-button navbar-button-alternate"
+    (click)="scrollTo('sponsors')"
+    >Sponsors</a
+  >
+  <a
+    class="hover-underline-animation navbar-button navbar-button-alternate"
+    (click)="scrollTo('team')"
+    >Team</a
+  >
 
-    <a
-      class="navbar-button navbar-button-alternate"
-      (click)="scrollTo('alumni')"
-      >Alumni</a
-    >
-    <a
-      class="navbar-button navbar-button-alternate"
-      (click)="scrollTo('contact')"
-      >Contact</a
-    >
-  </mat-toolbar-row>
+  <a
+    class="hover-underline-animation navbar-button navbar-button-alternate"
+    (click)="scrollTo('alumni')"
+    >Alumni</a
+  >
+  <a
+    class="hover-underline-animation navbar-button navbar-button-alternate"
+    (click)="scrollTo('contact')"
+    >Contact</a
+  >
 </mat-toolbar>
+
+<div
+  class="mobile-topbar"
+  [ngClass]="
+    isAtTop ? 'transparent fade-in-top sidenav' : 'dark fade-in-top sidenav'
+  "
+>
+  <a
+    ><img
+      class="tag-image navbar-button-alternate"
+      src="assets/images/aerotantrix_white_tag.png"
+      (click)="scrollTo('home')"
+  /></a>
+
+  <button mat-icon-button>
+    <mat-icon class="menu-button" (click)="updateShowSideNav()">menu</mat-icon>
+  </button>
+</div>
+<div class="hidden-content" [@fadeInOut]="showSideNav ? 'visible' : 'hidden'">
+  <a
+    class="navbar-button navbar-button-alternate"
+    (click)="scrollTo('gallery', true)"
+    >Gallery</a
+  >
+  <a
+    class="navbar-button navbar-button-alternate"
+    (click)="scrollTo('sponsors', true)"
+    >Sponsors</a
+  >
+  <a
+    class="navbar-button navbar-button-alternate"
+    (click)="scrollTo('team', true)"
+    >Team</a
+  >
+
+  <a
+    class="navbar-button navbar-button-alternate"
+    (click)="scrollTo('alumni', true)"
+    >Alumni</a
+  >
+  <a
+    class="navbar-button navbar-button-alternate"
+    (click)="scrollTo('contact', true)"
+    >Contact</a
+  >
+</div>

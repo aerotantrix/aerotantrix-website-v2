@@ -11,7 +11,7 @@ export class GalleryService {
     return [
       {
         url: 'assets/images/gallery/orientation.png',
-        text: 'Orientation program on basics aeromodelling',
+        text: 'Orientation program on the basics of aeromodelling',
       },
       {
         url: 'assets/images/gallery/xflr5.png',

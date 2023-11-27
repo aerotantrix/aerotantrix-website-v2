@@ -25,7 +25,7 @@ export class TeamMembersService {
         'R&D Lead'
       ),
       new TeamMember(
-        'assets/images/team-members/sharath.png',
+        'assets/images/team-members/kanishk.png',
         'Kanishk Raj',
         'Fabrication Lead'
       ),

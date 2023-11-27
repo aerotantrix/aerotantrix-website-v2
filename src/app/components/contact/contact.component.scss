@@ -9,13 +9,39 @@
     align-items: center;
     background-color: #212529;
     color: white;
+    .col-4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .gmap {
+        border: 0.25rem solid white;
+        border-radius: 1.5rem;
+        height: 27rem;
+        width: 27rem;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+        iframe {
+          height: 22rem;
+          width: 26.5rem;
+          border-radius: 1rem;
+        }
+        .address {
+          font-size: 1.2rem;
+          padding: 1rem;
+        }
+        margin-bottom: 1rem;
+      }
+    }
     .contacts {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       .contact {
         height: auto;
-        width: 40rem;
+        width: 30rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -70,6 +96,38 @@
     align-items: center;
     background-color: #212529;
     color: white;
+    .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .col-4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .gmap {
+        border: 0.25rem solid white;
+        border-radius: 1.5rem;
+        height: auto;
+        width: 16rem;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+        iframe {
+          height: 15rem;
+          width: 15.5rem;
+          border-radius: 1rem;
+        }
+        .address {
+          font-size: 1rem;
+          padding: 1rem;
+        }
+        margin-bottom: 1rem;
+      }
+    }
     .contacts {
       display: flex;
       flex-wrap: wrap;
@@ -83,10 +141,8 @@
         margin: 1rem 2rem;
         align-items: center;
         border: 0.25rem solid white;
-
         border-radius: 1.5rem;
         transition: transform 0.2s ease-in-out;
-
         &:hover {
           cursor: pointer;
           transform: scale(1.05);
