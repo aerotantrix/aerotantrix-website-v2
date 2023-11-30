@@ -35,7 +35,7 @@ export class ContactsService {
         'assets/images/contacts/instagram.png',
         'Instagram',
         '',
-        ''
+        'aerotantrix'
       ),
       // new Contact(
       //   'Large',

@@ -46,7 +46,7 @@ export class TeamMembersService {
       ),
       new TeamMember(
         'assets/images/team-members/channnakeshava.png',
-        'Channakeshava',
+        'Channakeshava M',
         'Core Member'
       ),
       new TeamMember(
@@ -66,7 +66,7 @@ export class TeamMembersService {
       ),
       new TeamMember(
         'assets/images/team-members/DARSHAN.png',
-        'Darshan Y.',
+        'Darshan Y',
         'Core Member'
       ),
       new TeamMember(
@@ -76,7 +76,7 @@ export class TeamMembersService {
       ),
       new TeamMember(
         'assets/images/team-members/SAATWIK.png',
-        'Saatwik',
+        'Saathwik',
         'Core Member'
       ),
     ];

@@ -6,9 +6,20 @@
   .mobile-topbar {
     padding: 1.15rem 0.25rem;
     display: flex;
-    vertical-align: center;
-    justify-content: space-between;
+    justify-content: center;
+    .logos {
+      left: 0.25rem;
+      position: absolute;
+      .logo-image {
+        margin-left: 0.1rem;
+        height: 2rem;
+        width: auto;
+        object-fit: contain;
+      }
+    }
     button {
+      right: 0;
+      position: absolute;
       background-color: transparent;
       border: none;
       color: white;
@@ -34,6 +45,11 @@
 @media (min-width: 700px) {
   .mobile-topbar {
     display: none;
+  }
+  .logo-image {
+    height: 3.5rem;
+    width: auto;
+    object-fit: contain;
   }
 }
 
@@ -100,7 +116,6 @@ a {
 
 @media (min-width: 1300px) {
   .mat-toolbar {
-    padding: 0 20vw;
     flex-direction: row;
     justify-content: space-evenly;
   }
@@ -108,7 +123,6 @@ a {
 
 @media (min-width: 1000px) {
   .mat-toolbar {
-    padding: 0 10vw;
     flex-direction: row;
     justify-content: space-evenly;
   }

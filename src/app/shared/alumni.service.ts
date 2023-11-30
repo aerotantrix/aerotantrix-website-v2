@@ -49,6 +49,16 @@ export class AlumniService {
         'Tejas Basavaraj',
         'VÆRIDION'
       ),
+      new Alumni(
+        'assets/images/alumni/shridhar.png',
+        'Sharath Shridhar Hegde',
+        'Altair'
+      ),
+      new Alumni(
+        'assets/images/alumni/naseel.png',
+        'Naseel Sinan',
+        'The University of Manchester'
+      ),
     ];
   }
 }

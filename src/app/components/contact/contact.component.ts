@@ -18,7 +18,7 @@ export class ContactComponent {
     if (modifier === 'Gmail') {
       window.open(`mailto:${contact.tag2}`, '_blank');
     } else if (modifier === 'Instagram') {
-      window.open(contact.tag2, '_blank');
+      window.open('https://www.instagram.com/aerotantrix/', '_blank');
     } else if (modifier === 'Ketto') {
       window.open('https://ketto.org/s?id=rm-867662-7545794', '_blank');
     } else if (modifier === 'GitHub') {
