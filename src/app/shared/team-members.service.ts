@@ -79,6 +79,31 @@ export class TeamMembersService {
         'Saathwik',
         'Core Member'
       ),
+      new TeamMember(
+        'assets/images/team-members/aditi.png',
+        'Aditi',
+        'Core Member'
+      ),
+      new TeamMember(
+        'assets/images/team-members/akshay.png',
+        'Akshay S P',
+        'Core Member'
+      ),
+      new TeamMember(
+        'assets/images/team-members/veeresh.png',
+        'C N Veeresh',
+        'Core Member'
+      ),
+      new TeamMember(
+        'assets/images/team-members/gururaj.png',
+        'Gururaj',
+        'Core Member'
+      ),
+      new TeamMember(
+        'assets/images/team-members/tharun.png',
+        'Tharun S Gowda',
+        'Core Member'
+      ),
     ];
   }
 }

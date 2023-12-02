@@ -59,6 +59,11 @@ export class AlumniService {
         'Naseel Sinan',
         'The University of Manchester'
       ),
+      new Alumni(
+        'assets/images/alumni/vaishnavi.png',
+        'Vaishnavi',
+        'Indian Airforce'
+      ),
     ];
   }
 }
